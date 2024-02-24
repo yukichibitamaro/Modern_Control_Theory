@@ -17,8 +17,8 @@
 
 # ソースコード 一覧
  
- ・Sample_Time_response_of_primary_system
-
-   1次システムの時間応答
+ ・Sample_Time_response_of_primary_system.m
  
+ 　  線形1次システムの時間応答解析解の導出
+   
  ・bbbb
