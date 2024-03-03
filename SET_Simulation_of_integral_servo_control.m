@@ -15,8 +15,8 @@ Sampling_time = 0.001; % サンプリング時間
 Step_tarege = 10;      % ステップ値
 Target_rise_time = 1;  % 立ち上がり時間
 % 正弦波目標軌道
-Amplitude = 10;         % 振幅
-Angular_frequency = 3; % 各周波数
+Amplitude = 10;        % 振幅
+Angular_frequency = 3; % 角周波数
 Initial_phase = 0;     % 初期位相
 % ステップ外生入力
 Step_noise = 50;        % ステップ値
@@ -41,9 +41,9 @@ tildeAe = [ A, zeros(n,q);
             -C, zeros(q,q)];
 tildeBe = [B;zeros(q,p)];
 %% CONTROLLER DESIGN
-q11 =    700; % 変位の重み
-q22 =    200; % 速度の重み
-q33 =  10000; % 積分器の重み
+q11 =    500; % 変位の重み
+q22 =    100; % 速度の重み
+q33 =  100000000; % 積分器の重み
 Q = diag([q11 q22 q33]); % 状態変数重み行列の定義
 R   =   1;  % 入力重み行列の定義
 tildeKe = -lqr(tildeAe,tildeBe,Q,R);
@@ -53,8 +53,10 @@ G  = tildeKe(:,n+1:n+q);
 open_system('Model_Simulation_of_integral_servo_control'); % Simulinkを起動
 sim('Model_Simulation_of_integral_servo_control'); % シミュレーション実行
 %% Animation
-Function_animate1MSD(Time,Displacement_Step,Target_Step,Control_Input_Step,(1/0.005))
-%Function_animate1MSD(Time,Displacement_SW,Target_SW,Control_Input_SW,(1/0.005))
+animation_sampling = 1/0.004;
+%Function_animate1MSD(Time,Displacement_Step,Target_Step,Control_Input_Step,animation_sampling,8)
+Function_animate1MSD(Time,Displacement_SW,Target_SW,Control_Input_SW,animation_sampling,6)
+disp('fin')
 
 
 

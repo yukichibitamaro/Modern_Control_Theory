@@ -1,16 +1,16 @@
 % k = 1のみに変更するひつようあり
 
-function Function_animate1MSD(Time, Displacement,Target,Control_Input,steps)
+function Function_animate1MSD(Time, Displacement,Target,Control_Input,animation_sampling,wide)
     %% 初期設定
     % 質点の設定
     Nmass = 1; % 慣性体の数を設定
-    w = 8;     % 質点の幅の設定  ---> targetから生成されるように変更する必要あり
-    h = 2.2;   % 質点の高さの設定
-    y = 0;     % 位置の設定
+    w = wide;  % 慣性体の幅の設定
+    h = 2.2;   % 慣性体の高さの設定
+    y = 0;     % 慣性体の位置の設定
     % 変数設定
-    t = linspace(Time(1), Time(end), steps); % シミュレーション時間をアニメーションステップ数に分割して時間ベクトルを生成
-    x = zeros(steps, Nmass); % 質点の位置の空行列を定義
-    u = zeros(steps, Nmass); % 制御入力の空行列を定義
+    t = linspace(Time(1), Time(end), animation_sampling); % シミュレーション時間をアニメーションステップ数に分割して時間ベクトルを生成
+    x = zeros(animation_sampling, Nmass); % 質点の位置の空行列を定義
+    u = zeros(animation_sampling, Nmass); % 制御入力の空行列を定義
     % ルックアップテーブルを使用して各質点の位置や入力をアニメーション時間に対して離散点を補間する
     for k = 1:Nmass 
         x(:, k) = interp1(Time, Displacement(:, k), t);  % 質点の位置 
@@ -92,6 +92,8 @@ function Function_animate1MSD(Time, Displacement,Target,Control_Input,steps)
         h_axes = gca;
         h_axes.XAxis.FontSize = 22; % x軸フォントサイズの設定
         h_axes.YAxis.FontSize = 22; % y軸フォントサイズの設定
+        %xlim([0,max(Time)])
+        %ylim([max(-Displacement)-2,max(Displacement)+2])
         xlabel("Time [s]")
         ylabel("Displacement [m]")
         hold off
