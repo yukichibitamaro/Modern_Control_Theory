@@ -6,14 +6,18 @@
 
 ### 〇 開発言語
  
- MATLAB & Simulink 2023b
+MATLAB & Simulink
+
+### 〇 バージョン
+
+2023b
  
- ### 〇 アドオン(ライブラリ)
+### 〇 アドオン(ライブラリ)
  
- ・Simulink
+・Simulink
 
 
-# ソースコード 一覧
+# ソースコード
  
  ・Primary_system_response_time.m
  
@@ -28,20 +32,21 @@
  　  積分型サーボ制御の性能評価シミュレーション設定ファイル
 
     
-# 関数 一覧
+# 関数
  
  ・Function_animate1MSD
  
  　  1慣性機械(マス・ばね・ダンパ)システムのアニメーション描画関数
    
 
-# Simulink 一覧
+# Simulink
 
  ・Model_Simulation_of_integral_servo_control.slx
 
  　  積分型サーボ制御の性能評価シミュレーションSimulinkモデル
 
+# シミュレーション結果
+ ・積分型サーボ制御
 https://github.com/yukichibitamaro/Modern_Control_Theory/assets/127653395/0e794a3c-5f9f-4905-a810-b6091bebcb57
-
 https://github.com/yukichibitamaro/Modern_Control_Theory/assets/127653395/ac5ed64a-7eb6-421d-89b4-61f4f8d5c75e
 
