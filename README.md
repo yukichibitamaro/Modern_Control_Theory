@@ -27,9 +27,6 @@
 
  　  積分型サーボ制御の性能評価シミュレーション設定ファイル
 
-https://github.com/yukichibitamaro/Modern_Control_Theory/assets/127653395/e7116a5d-493f-47c1-9e2f-9a4e8be8569a
-
-
     
 # 関数 一覧
  
@@ -43,3 +40,8 @@ https://github.com/yukichibitamaro/Modern_Control_Theory/assets/127653395/e7116a
  ・Model_Simulation_of_integral_servo_control.slx
 
  　  積分型サーボ制御の性能評価シミュレーションSimulinkモデル
+
+https://github.com/yukichibitamaro/Modern_Control_Theory/assets/127653395/0e794a3c-5f9f-4905-a810-b6091bebcb57
+
+https://github.com/yukichibitamaro/Modern_Control_Theory/assets/127653395/ac5ed64a-7eb6-421d-89b4-61f4f8d5c75e
+
