@@ -26,6 +26,10 @@
  ・SET_Simulation_of_integral_servo_control.m
 
  　  積分型サーボ制御の性能評価シミュレーション設定ファイル
+
+https://github.com/yukichibitamaro/Modern_Control_Theory/assets/127653395/e7116a5d-493f-47c1-9e2f-9a4e8be8569a
+
+
     
 # 関数 一覧
  
