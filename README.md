@@ -32,20 +32,20 @@ MATLAB & Simulink
  　  積分型サーボ制御の性能評価シミュレーション設定ファイル
 
     
-# 関数
+# ◎関数
  
  ・Function_animate1MSD
  
  　  1慣性機械(マス・ばね・ダンパ)システムのアニメーション描画関数
    
 
-# Simulink
+# ◎Simulink
 
  ・Model_Simulation_of_integral_servo_control.slx
 
  　  積分型サーボ制御の性能評価シミュレーションSimulinkモデル
 
-# シミュレーション結果
+# ◎シミュレーション結果
 
  ・積分型サーボ制御
  
