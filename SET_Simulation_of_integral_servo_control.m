@@ -11,16 +11,23 @@ format compact;  % 余計な改行を消去
 % シミュレーション時間
 Sim_time = 10;         % シミュレーション時間
 Sampling_time = 0.001; % サンプリング時間
-% ステップ目標値
-Step_tarege = 10;      % ステップ値
-Target_rise_time = 1;  % 立ち上がり時間
-% 正弦波目標軌道
-Amplitude = 10;        % 振幅
-Angular_frequency = 3; % 角周波数
-Initial_phase = 0;     % 初期位相
-% ステップ外生入力
-Step_noise = 50;        % ステップ値
+% ステップ目標値の設定
+Step_tarege = 10;         % ステップ値
+Target_rise_time = 1;     % 立ち上がり時間
+Target_Velocity_Step = 0; % 速度目標軌道
+% 正弦波目標軌道の設定
+Amplitude = 10;               % 振幅
+Angular_frequency = 3;        % 角周波数
+Initial_phase = 0;            % 初期位相
+Target_Velocity_SineWave = 0; % 速度目標軌道
+% ステップ外生入力の設定
+Step_noise = 50;       % ステップ値
 Noise_rise_time = 5;   % 立ち上がり時間
+%% SETTINGS ANIMATION
+% アニメーション結果を見て3つを手動調整
+animation_sampling = 1/0.004; % アニメーションサンプリング時間
+Cart_width_Step = 6;          % 描画する台車の幅(ステップ目標値)
+Cart_width_SineWave = 5;      % 描画する台車の幅(正弦波目標軌道)
 %% VARIABLE DEFINITION
 m = 1;  % 質量係数
 c = 2;  % 粘性係数
@@ -43,20 +50,20 @@ tildeBe = [B;zeros(q,p)];
 %% CONTROLLER DESIGN
 q11 =    500; % 変位の重み
 q22 =    100; % 速度の重み
-q33 =  100000000; % 積分器の重み
+q33 =  10000; % 積分器の重み(10000/10000000)
 Q = diag([q11 q22 q33]); % 状態変数重み行列の定義
-R   =   1;  % 入力重み行列の定義
+R   =   1;               % 入力重み行列の定義
 tildeKe = -lqr(tildeAe,tildeBe,Q,R);
-Ke = tildeKe(:,1:n);
-G  = tildeKe(:,n+1:n+q);
+Ke = tildeKe(:,1:n);     % 状態フィードバックゲインの抽出
+G  = tildeKe(:,n+1:n+q); % 積分ゲインの抽出
 %% SIMULATION
 open_system('Model_Simulation_of_integral_servo_control'); % Simulinkを起動
-sim('Model_Simulation_of_integral_servo_control'); % シミュレーション実行
-%% Animation
-animation_sampling = 1/0.004;
-%Function_animate1MSD(Time,Displacement_Step,Target_Step,Control_Input_Step,animation_sampling,8)
-Function_animate1MSD(Time,Displacement_SW,Target_SW,Control_Input_SW,animation_sampling,6)
-disp('fin')
+sim('Model_Simulation_of_integral_servo_control');         % シミュレーション実行
+%% ANIMATION
+% 関数の引数(時間,変位,速度,変位目標値(軌道),速度目標値(軌道),制御入力(操作量),アニメーションサンプリング時間,台車幅,figureナンバー,動画保存名と拡張子)
+Function_animate1MSD(Time,Displacement_Step,Velocity_Step,Target_Displacement_Step,Target_Velocity_Step,Control_Input_Step,animation_sampling,Cart_width_Step,1,'Movie_Step.mp4')
+Function_animate1MSD(Time,Displacement_SineWave,Velocity_SineWave,Target_Displacement_SineWave,Target_Velocity_SineWave,Control_Input_SineWave,animation_sampling,Cart_width_SineWave,2,'Movie_SineWave.mp4')
+disp('Finished!!!!!!!!')
 
 
 
