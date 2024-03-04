@@ -1,8 +1,8 @@
-# Modern_Control_Theory
+# ★Modern_Control_Theory★
 
 #### 現代制御理論(解析やシミュレーション)に関するソースコードとSimulinkをまとめたリポジトリ
 
-# 開発環境
+# ◎開発環境
 
 ### 〇 開発言語
  
@@ -17,7 +17,7 @@ MATLAB & Simulink
 ・Simulink
 
 
-# ソースコード
+# ◎ソースコード
  
  ・Primary_system_response_time.m
  
