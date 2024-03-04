@@ -46,7 +46,10 @@ MATLAB & Simulink
  　  積分型サーボ制御の性能評価シミュレーションSimulinkモデル
 
 # シミュレーション結果
+
  ・積分型サーボ制御
+ 
 https://github.com/yukichibitamaro/Modern_Control_Theory/assets/127653395/0e794a3c-5f9f-4905-a810-b6091bebcb57
+
 https://github.com/yukichibitamaro/Modern_Control_Theory/assets/127653395/ac5ed64a-7eb6-421d-89b4-61f4f8d5c75e
 
