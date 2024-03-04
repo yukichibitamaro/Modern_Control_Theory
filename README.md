@@ -15,9 +15,9 @@
  ・bbbb
 
 
-# MATLABコード & Simulink 一覧
+# ソースコード 一覧
  
- ・Sample_Time_response_of_primary_system.m
+ ・Primary_system_response_time.m
  
  　  線形1次システムの時間応答解析解の導出
    
@@ -28,6 +28,15 @@
  ・SET_Simulation_of_integral_servo_control.m
 
  　  積分型サーボ制御の性能評価シミュレーション設定ファイル
+    
+# 関数 一覧
+ 
+ ・Function_animate1MSD
+ 
+ 　  1慣性機械(マス・ばね・ダンパ)システムのアニメーション描画関数
+   
+
+# Simulink 一覧
 
  ・Model_Simulation_of_integral_servo_control.slx
 
