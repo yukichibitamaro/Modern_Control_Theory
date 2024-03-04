@@ -6,11 +6,11 @@
 
 ### 〇 開発言語
  
-MATLAB & Simulink
+・MATLAB & Simulink
 
 ### 〇 バージョン
 
-2023b
+・2023b
  
 ### 〇 アドオン(ライブラリ)
  
