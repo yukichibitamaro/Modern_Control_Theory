@@ -11,16 +11,16 @@ format compact;  % 余計な改行を消去
 % シミュレーション時間
 Sim_time = 10;         % シミュレーション時間
 Sampling_time = 0.001; % サンプリング時間
-% ステップ目標値の設定
-Step_tarege = 10;         % ステップ値
+% ステップ変位目標値の設定
+Step_value = 10;          % ステップ値
 Target_rise_time = 1;     % 立ち上がり時間
-Target_Velocity_Step = 0; % 速度目標軌道
-% 正弦波目標軌道の設定
+Target_Velocity_Step = zeros((1/Sampling_time)*Sim_time+1,1); % 速度目標軌道
+% 正弦波変位目標軌道の設定
 Amplitude = 10;               % 振幅
 Vibration_period = 2;         % 振動周期
 Angular_frequency = (2*pi)/Vibration_period; % 角周波数
 Initial_phase = 0;            % 初期位相
-Target_Velocity_SineWave = 0; % 速度目標軌道
+Target_Velocity_SineWave = zeros((1/Sampling_time)*Sim_time+1,1); ; % 速度目標軌道
 % ステップ外生入力の設定
 Step_noise = 50;       % ステップ値
 Noise_rise_time = 5;   % 立ち上がり時間

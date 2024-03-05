@@ -85,7 +85,11 @@ function Function_animate1MSD(Time,Displacement,Velocity,Target_Displacement,Tar
         subplot(4,1,2) 
         cla
         hold on
-        plot(Time, Target_Displacement,':k','LineWidth',4.0)
+        if (max(Target_Displacement) == 0) && (max(-Target_Displacement) == 0)
+            % 目標軌道の描画をしない
+        else
+            plot(Time, Target_Displacement,':k','LineWidth',4.0)
+        end
         plot(t, x,'-b','LineWidth',4.0)
         plot(t(j), x(j, 1), "bo", "MarkerFaceColor", 'b', 'MarkerSize', 10)
         grid on;
@@ -94,7 +98,11 @@ function Function_animate1MSD(Time,Displacement,Velocity,Target_Displacement,Tar
         h_axes.YAxis.FontSize = 15; % y軸フォントサイズの設定
         xlim([0,max(Time)])
         if (max(-Target_Displacement) == 0)
-            ylim([0,max(x)+3])
+            if (max(Target_Displacement) == 0)
+                ylim([-max(-x)-3,max(x)+3])
+            else
+                ylim([0,max(x)+3])
+            end
         else
             ylim([-max(-x)-5,max(x)+5])
         end
