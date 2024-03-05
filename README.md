@@ -66,7 +66,10 @@
 
 https://github.com/yukichibitamaro/Modern_Control_Theory/assets/127653395/54a572d5-e691-42c8-9e06-c53327ee1525
 
-https://github.com/yukichibitamaro/Modern_Control_Theory/assets/127653395/2075f419-9da6-4a87-b2ed-108fbe4b5d7e
+
+https://github.com/yukichibitamaro/Modern_Control_Theory/assets/127653395/88c9f3e1-8ff7-4c0f-84d3-718a9bf64e69
+
+
 
 
 
