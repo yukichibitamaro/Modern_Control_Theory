@@ -32,9 +32,9 @@
 
 # ◎ソースコード
  
- ・Primary_system_response_time.m
+ ・Primary_system_response_time.m　：　線形1次システムの時間応答解析解の導出
  
- 　  線形1次システムの時間応答解析解の導出
+ 　  
    
  ・n_Secondary_system_response_time.m
 
