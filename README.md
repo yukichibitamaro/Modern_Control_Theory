@@ -58,6 +58,7 @@
 
 
  ・Model_Simulation_of_integral_servo_control.slx
+ 
 　：　積分型サーボ制御の性能評価シミュレーションSimulinkモデル
  　 
 # ◎シミュレーション
