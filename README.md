@@ -43,6 +43,10 @@
  
 　：　線形n次システムの時間応答解析解の導出
 
+ ・SET_Simulation_of_regulator_control.m
+ 
+　：　レギュレータ制御シミュレーション設定&実行ファイル
+
  ・SET_Simulation_of_integral_servo_control.m
  
 　：　積分型サーボ制御の性能評価シミュレーション設定&実行ファイル
@@ -56,12 +60,19 @@
 
 # ◎Simulink
 
-
+ ・Model_Simulation_of_regulator_control.slx
+ 
+　：　レギュレータ制御の性能評価シミュレーションSimulinkモデル
+ 
  ・Model_Simulation_of_integral_servo_control.slx
  
 　：　積分型サーボ制御の性能評価シミュレーションSimulinkモデル
  　 
 # ◎シミュレーション
+
+ ・レギュレータ制御
+
+https://github.com/yukichibitamaro/Modern_Control_Theory/assets/127653395/dc54ba4f-0cf2-4e02-90e8-4b5c8969a7f5
 
 
  ・積分型サーボ制御
