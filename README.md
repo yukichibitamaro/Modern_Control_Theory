@@ -64,12 +64,9 @@
 
  ・積分型サーボ制御
 
+https://github.com/yukichibitamaro/Modern_Control_Theory/assets/127653395/54a572d5-e691-42c8-9e06-c53327ee1525
 
-https://github.com/yukichibitamaro/Modern_Control_
-
-https://github.com/yukichibitamaro/Modern_Control_Theory/assets/127653395/a2eee987-9d29-4d93-bec0-3835e5658ad1
-
-Theory/assets/127653395/831df816-1d61-4e8c-a938-49698146c0a5
+https://github.com/yukichibitamaro/Modern_Control_Theory/assets/127653395/2075f419-9da6-4a87-b2ed-108fbe4b5d7e
 
 
 
