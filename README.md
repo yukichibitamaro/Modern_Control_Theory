@@ -31,7 +31,7 @@
  
  ・n_Secondary_system_response_time.m　：　線形n次システムの時間応答解析解の導出
 
- ・SET_Simulation_of_integral_servo_control.m　：　積分型サーボ制御の性能評価シミュレーション設定ファイル
+ ・SET_Simulation_of_integral_servo_control.m　：　積分型サーボ制御の性能評価シミュレーション設定&実行ファイル
 
 # ◎関数
 
