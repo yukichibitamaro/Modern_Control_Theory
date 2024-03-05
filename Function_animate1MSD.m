@@ -1,3 +1,5 @@
+%% 1慣性機械(マス・ばね・ダンパ)システムのアニメーション実行ファイル
+% 関数の引数(時間,変位,速度,変位目標値(軌道),速度目標値(軌道),制御入力(操作量),アニメーションサンプリング時間,台車幅,figureナンバー,動画保存名と拡張子)
 function Function_animate1MSD(Time,Displacement,Velocity,Target_Displacement,Target_Velocity,Control_Input,animation_sampling,cart_wide,figure_NUM,Movie_name)
     %% 初期設定
     % 質点の設定
