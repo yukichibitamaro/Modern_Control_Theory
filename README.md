@@ -16,7 +16,7 @@
  
 ・Simulink バージョン23.2　：　シミュレーションのモデル作成
  　  
-・Control System Toolbox バージョン23.2　：　線形制御システムの時間領域や周波数領域におけるシステムの動作を解析，設計，調整および可視化
+・Control System Toolbox バージョン23.2　：　線形制御システムの時間領域や周波数領域におけるシステムの動作を解析，設計，調整
     
 ・Simulink Control Design バージョン23.2　：　Simulink でモデル化された制御システムの設計と解析
     
