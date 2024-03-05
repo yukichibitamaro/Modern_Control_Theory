@@ -17,7 +17,7 @@
  
 ・Simulink バージョン23.2　：　シミュレーションのモデル作成
 
-・Control System Toolbox バージョン23.2　：　線形制御システムの時間領域や周波数領域における動作の解析，設計，調整
+・Control System Toolbox バージョン23.2 : 線形制御システムの時間領域や周波数領域における動作の解析，設計，調整
     
 ・Simulink Control Design バージョン23.2　：　Simulink でモデル化された制御システムの設計と解析
     
@@ -31,7 +31,7 @@
  
  ・n_Secondary_system_response_time.m　：　線形n次システムの時間応答解析解の導出
 
- ・SET_Simulation_of_integral_servo_control.m　：　積分型サーボ制御の性能評価シミュレーション設定&実行ファイル
+ ・SET_Simulation_of_integral_servo_control.m : 積分型サーボ制御の性能評価シミュレーション設定&実行ファイル
 
 # ◎関数
 
