@@ -16,7 +16,7 @@ Step_value = 10;          % ステップ値
 Target_rise_time = 1;     % 立ち上がり時間
 % 正弦波変位目標軌道の設定
 Amplitude = 10;               % 振幅
-Vibration_period = 2;         % 振動周期
+Vibration_period = 4;         % 振動周期
 Angular_frequency = (2*pi)/Vibration_period; % 角周波数
 Initial_phase = 0;            % 初期位相
 % ステップ外生入力の設定
@@ -46,9 +46,9 @@ tildeAe = [ A, zeros(n,q);   % 拡大偏差システム係数行列の定義
             C, zeros(q,q)];
 tildeBe = [B;zeros(q,p)];    % 拡大偏差入力係数行列の定義
 %% ---------- CONTROLLER DESIGN ---------- 
-q11 =    500; % 変位の重み
-q22 =    100; % 速度の重み
-q33 =  10000; % 積分器の重み
+q11 = 100000; % 変位の重み
+q22 =     10; % 速度の重み
+q33 =   1000; % 積分器の重み
 Q = diag([q11 q22 q33]); % 状態変数重み行列の定義
 R   =   1;               % 入力重み行列の定義
 tildeKe = -lqr(tildeAe,tildeBe,Q,R) % LQRによるフィードバックゲインの計算
@@ -60,5 +60,5 @@ sim('Model_Sim_of_state_deviation_FB_and_output_integral_PID');         % シミ
 %% ---------- ANIMATION ---------- 
 % 関数の引数(時間,変位,速度,変位目標値(軌道),速度目標値(軌道),制御入力(操作量),アニメーションサンプリング時間,台車幅,figureナンバー,動画保存名と拡張子)
 %Function_animate1MSD(Time,Displacement_Step,Velocity_Step,Target_Displacement_Step,Target_Velocity_Step,Control_Input_Step,animation_sampling,Cart_width_Step,1,'Movie_Step.mp4')
-%Function_animate1MSD(Time,Displacement_SineWave,Velocity_SineWave,Target_Displacement_SineWave,Target_Velocity_SineWave,Control_Input_SineWave,animation_sampling,Cart_width_SineWave,2,'Movie_SineWave.mp4')
+Function_animate1MSD(Time,Displacement_SineWave,Velocity_SineWave,Target_Displacement_SineWave,Target_Velocity_SineWave,Control_Input_SineWave,animation_sampling,Cart_width_SineWave,2,'Movie_SineWave.mp4')
 disp('Finished!!!!!!!!')

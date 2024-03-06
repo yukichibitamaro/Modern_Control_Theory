@@ -17,7 +17,7 @@ Target_rise_time = 1;     % 立ち上がり時間
 Target_Velocity_Step = zeros((1/Sampling_time)*Sim_time+1,1); % 速度目標軌道
 % 正弦波変位目標軌道の設定
 Amplitude = 10;               % 振幅
-Vibration_period = 2;         % 振動周期
+Vibration_period = 4;         % 振動周期
 Angular_frequency = (2*pi)/Vibration_period; % 角周波数
 Initial_phase = 0;            % 初期位相
 Target_Velocity_SineWave = zeros((1/Sampling_time)*Sim_time+1,1); ; % 速度目標軌道
