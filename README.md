@@ -47,7 +47,7 @@
  
 　：　レギュレータ制御シミュレーション設定&実行ファイル
 
- ・SET_Simulation_of_integral_servo_control.m
+ ・SET_Simulation_of_integral_servo_control_I_PD.m
  
 　：　積分型サーボ制御の性能評価シミュレーション設定&実行ファイル
 
@@ -64,7 +64,7 @@
  
 　：　レギュレータ制御の性能評価シミュレーションSimulinkモデル
  
- ・Model_Simulation_of_integral_servo_control.slx
+ ・Model_Simulation_of_integral_servo_control_I_PD.slx
  
 　：　積分型サーボ制御の性能評価シミュレーションSimulinkモデル
  　 
