@@ -43,11 +43,11 @@
  
 　：　線形n次システムの時間応答解析解の導出
 
- ・SET_Simulation_of_regulator_control.m
+ ・SET_Sim_of_regulator_control
  
 　：　レギュレータ制御シミュレーション設定&実行ファイル
 
- ・SET_Simulation_of_integral_servo_control_I_PD.m
+ ・SET_Sim_of_integral_servo_I_PD
  
 　：　積分型サーボ制御の性能評価シミュレーション設定&実行ファイル
 
@@ -60,11 +60,11 @@
 
 # ◎Simulink
 
- ・Model_Simulation_of_regulator_control.slx
+ ・Model_Sim_of_regulator.slx
  
 　：　レギュレータ制御の性能評価シミュレーションSimulinkモデル
  
- ・Model_Simulation_of_integral_servo_control_I_PD.slx
+ ・Model_Sim_of_integral_servo_I_PD
  
 　：　積分型サーボ制御の性能評価シミュレーションSimulinkモデル
  　 
