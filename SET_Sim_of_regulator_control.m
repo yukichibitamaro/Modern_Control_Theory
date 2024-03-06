@@ -36,8 +36,8 @@ p2 = -3; % 速度の極
 p = [p1,p2]; % 状態変数の極
 K = -place(A,B,p) % 状態フィードバックゲインの抽出
 %% ---------- SIMULATION ---------- 
-open_system('Model_Simulation_of_regulator_control'); % Simulinkを起動
-sim('Model_Simulation_of_regulator_control');         % シミュレーション実行
+open_system('Model_Sim_of_regulator'); % Simulinkを起動
+sim('Model_Sim_of_regulator');         % シミュレーション実行
 %% ---------- ANIMATION ---------- 
 % 関数の引数(時間,変位,速度,変位目標値(軌道),速度目標値(軌道),制御入力(操作量),アニメーションサンプリング時間,台車幅,figureナンバー,動画保存名と拡張子)
 Function_animate1MSD(Time,Displacement,Velocity,Target_Displacement,Target_Velocity,Control_Input,animation_sampling,Cart_width,1,'Movie_Regulator.mp4')
