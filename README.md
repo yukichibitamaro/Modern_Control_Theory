@@ -82,39 +82,40 @@
  
  ・Model_Sim_of_integral_servo_I_PD.m
  
-　：　積分型サーボ制御(I-PD制御)の性能評価シミュレーション設定&実行ファイル
+　：　積分型サーボ制御(I-PD制御)の性能評価シミュレーションSimulinkモデル
 
  ・Model_Sim_of_State_deviation_FB_PD.m
  
-　：　状態偏差FB制御(PD制御)の性能評価シミュレーション設定&実行ファイル
+　：　状態偏差FB制御(PD制御)の性能評価シミュレーションSimulinkモデル
 
  ・Model_Sim_of_State_deviation_FB_PD_.m
  
-　：　(微分先行型)状態偏差FB制御(P-D制御)の性能評価シミュレーション設定&実行ファイル
+　：　(微分先行型)状態偏差FB制御(P-D制御)の性能評価シミュレーションSimulinkモデル
 
  ・Model_Sim_of_state_deviation_FB_and_output_integral_PID.m
  
-　：　状態偏差FB&出力偏差積分制御(PID制御)の性能評価シミュレーション設定&実行ファイル
+　：　状態偏差FB&出力偏差積分制御(PID制御)の性能評価シミュレーションSimulinkモデル
 
  ・Model_Sim_of_state_deviation_FB_and_output_integral_PI-D.m
  
-　：　(微分先行型)状態偏差FB&出力偏差積分制御(PID制御)の性能評価シミュレーション設定&実行ファイル
+　：　(微分先行型)状態偏差FB&出力偏差積分制御(PID制御)の性能評価シミュレーションSimulinkモデル
  　 
 # ◎シミュレーション
 
  ・レギュレータ制御
 
-https://github.com/yukichibitamaro/Modern_Control_Theory/assets/127653395/dc54ba4f-0cf2-4e02-90e8-4b5c8969a7f5
+
+ ・積分型サーボ(I-PD)制御
 
 
- ・積分型サーボ制御
-
-https://github.com/yukichibitamaro/Modern_Control_Theory/assets/127653395/54a572d5-e691-42c8-9e06-c53327ee1525
+ ・状態偏差FB制御(PD制御)
 
 
-https://github.com/yukichibitamaro/Modern_Control_Theory/assets/127653395/88c9f3e1-8ff7-4c0f-84d3-718a9bf64e69
+ ・(微分先行型)状態偏差FB制御(P-D制御)
 
 
+ ・状態偏差FB&出力偏差積分制御(PID制御)
 
 
+ ・(微分先行型)状態偏差FB&出力偏差積分制御(PI-D制御)
 
