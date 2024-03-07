@@ -126,6 +126,14 @@ https://github.com/yukichibitamaro/Modern_Control_Theory/assets/127653395/847ab0
 
  ・状態偏差FB&出力偏差積分制御(PID制御)
 
+https://github.com/yukichibitamaro/Modern_Control_Theory/assets/127653395/bc24c924-d426-4915-a127-fd87477b7cb7
+
+https://github.com/yukichibitamaro/Modern_Control_Theory/assets/127653395/01081db2-c890-4b58-ab0c-e3eadfd95595
 
  ・(微分先行型)状態偏差FB&出力偏差積分制御(PI-D制御)
+
+https://github.com/yukichibitamaro/Modern_Control_Theory/assets/127653395/97d39752-aaa4-46b3-a03c-b2a03c2faa4f
+
+https://github.com/yukichibitamaro/Modern_Control_Theory/assets/127653395/ace3c317-90f9-4997-a81c-dd1938850c87
+
 
