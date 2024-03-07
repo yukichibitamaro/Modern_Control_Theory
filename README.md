@@ -55,7 +55,7 @@
  
 　：　状態偏差FB制御(PD制御)の性能評価シミュレーション設定&実行ファイル
 
- ・SET_Sim_of_State_deviation_FB_PD_.m
+ ・SET_Sim_of_State_deviation_FB_P_D.m
  
 　：　(微分先行型)状態偏差FB制御(P-D制御)の性能評価シミュレーション設定&実行ファイル
 
@@ -63,9 +63,9 @@
  
 　：　状態偏差FB&出力偏差積分制御(PID制御)の性能評価シミュレーション設定&実行ファイル
 
- ・SET_Sim_of_state_deviation_FB_and_output_integral_PI-D.m
+ ・SET_Sim_of_state_deviation_FB_and_output_integral_PI_D.m
  
-　：　(微分先行型)状態偏差FB&出力偏差積分制御(PID制御)の性能評価シミュレーション設定&実行ファイル
+　：　(微分先行型)状態偏差FB&出力偏差積分制御(PI-D制御)の性能評価シミュレーション設定&実行ファイル
 
 # ◎関数
 
@@ -88,17 +88,17 @@
  
 　：　状態偏差FB制御(PD制御)の性能評価シミュレーションSimulinkモデル
 
- ・Model_Sim_of_State_deviation_FB_PD_.m
+ ・Model_Sim_of_State_deviation_FB_P-D_.m
  
 　：　(微分先行型)状態偏差FB制御(P-D制御)の性能評価シミュレーションSimulinkモデル
 
- ・Model_Sim_of_state_deviation_FB_and_output_integral_PID.m
+ ・Model_Sim_of_State_deviation_FB_PID_.m
  
 　：　状態偏差FB&出力偏差積分制御(PID制御)の性能評価シミュレーションSimulinkモデル
 
- ・Model_Sim_of_state_deviation_FB_and_output_integral_PI-D.m
+ ・Model_Sim_of_state_deviation_FB_and_output_integral_PI_D.m
  
-　：　(微分先行型)状態偏差FB&出力偏差積分制御(PID制御)の性能評価シミュレーションSimulinkモデル
+　：　(微分先行型)状態偏差FB&出力偏差積分制御(PI-D制御)の性能評価シミュレーションSimulinkモデル
  　 
 # ◎シミュレーション
 
