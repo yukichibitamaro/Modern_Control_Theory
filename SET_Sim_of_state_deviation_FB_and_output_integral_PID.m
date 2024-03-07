@@ -60,6 +60,6 @@ open_system('Model_Sim_of_state_deviation_FB_and_output_integral_PID'); % Simuli
 sim('Model_Sim_of_state_deviation_FB_and_output_integral_PID');         % シミュレーション実行
 %% ---------- ANIMATION ---------- 
 % 関数の引数(時間,変位,速度,変位目標値(軌道),速度目標値(軌道),制御入力(操作量),アニメーションサンプリング時間,台車幅,figureナンバー,動画保存名と拡張子)
-Function_animate1MSD(Time,Displacement_Const,Velocity_Const,Target_Displacement_Const,Target_Velocity_Const,Control_Input_Const,animation_sampling,Cart_width_Const,1,'Movie_Step.mp4')
-Function_animate1MSD(Time,Displacement_SineWave,Velocity_SineWave,Target_Displacement_SineWave,Target_Velocity_SineWave,Control_Input_SineWave,animation_sampling,Cart_width_SineWave,2,'Movie_SineWave.mp4')
+Function_animate1MSD(Time,Displacement_Const,Velocity_Const,Target_Displacement_Const,Target_Velocity_Const,Control_Input_Const,animation_sampling,Cart_width_Const,1,'Movie_Constant_Target_Value.mp4')
+Function_animate1MSD(Time,Displacement_SineWave,Velocity_SineWave,Target_Displacement_SineWave,Target_Velocity_SineWave,Control_Input_SineWave,animation_sampling,Cart_width_SineWave,2,'Movie_SineWave_Target.mp4')
 disp('Finished!!!!!!!!')
