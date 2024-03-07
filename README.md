@@ -120,6 +120,9 @@ https://github.com/yukichibitamaro/Modern_Control_Theory/assets/127653395/2f43b7
 
  ・(微分先行型)状態偏差FB制御(P-D制御)
 
+https://github.com/yukichibitamaro/Modern_Control_Theory/assets/127653395/2732ffb3-8c89-45ce-b505-01560f211f15
+
+https://github.com/yukichibitamaro/Modern_Control_Theory/assets/127653395/847ab0d1-bb5d-4328-b1db-aaa7f66b8018
 
  ・状態偏差FB&出力偏差積分制御(PID制御)
 
