@@ -104,24 +104,19 @@
 
  ・レギュレータ制御
 
-
 https://github.com/yukichibitamaro/Modern_Control_Theory/assets/127653395/3f5427c0-83d5-4340-92c3-03a76a1e0f2a
-
-
 
  ・積分型サーボ(I-PD)制御
 
+https://github.com/yukichibitamaro/Modern_Control_Theory/assets/127653395/dbc9a7ec-2a10-4e1a-af93-5da3e2852d06
 
-https://github.com/yukichibitamaro/Modern_Control_Theory/assets/127653395/96ca90b1-4ddb-44e7-9117-970bd8b07f70
-
-
-https://github.com/yukichibitamaro/Modern_Control_Theory/assets/127653395/496408db-b21e-4ab9-abaf-9531295cce79
-
-
-
+https://github.com/yukichibitamaro/Modern_Control_Theory/assets/127653395/b7d78ba7-1f5e-49bb-94da-5360d67c2d14
 
  ・状態偏差FB制御(PD制御)
 
+https://github.com/yukichibitamaro/Modern_Control_Theory/assets/127653395/98f0b807-3419-48f7-8dca-a47416dccb57
+
+https://github.com/yukichibitamaro/Modern_Control_Theory/assets/127653395/2f43b704-d55f-4575-bb22-77d01d06f9be
 
  ・(微分先行型)状態偏差FB制御(P-D制御)
 
