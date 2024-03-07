@@ -104,7 +104,7 @@ function Function_animate1MSD(Time,Displacement,Velocity,Target_Displacement,Tar
                 ylim([0,max(x)+3])
             end
         else
-            ylim([-max(-x)-5,max(x)+5])
+            ylim([-max(-x)-2,max(x)+2])
         end
         xlabel("Time [s]")
         ylabel("Displacement [m]")

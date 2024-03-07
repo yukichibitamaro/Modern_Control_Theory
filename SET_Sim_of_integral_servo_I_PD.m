@@ -17,12 +17,12 @@ Target_rise_time = 1;     % 立ち上がり時間
 Target_Velocity_Step = zeros((1/Sampling_time)*Sim_time+1,1); % 速度目標軌道
 % 正弦波変位目標軌道の設定
 Amplitude = 10;               % 振幅
-Vibration_period = 4;         % 振動周期
+Vibration_period = 3;         % 振動周期
 Angular_frequency = (2*pi)/Vibration_period; % 角周波数
 Initial_phase = 0;            % 初期位相
 Target_Velocity_SineWave = zeros((1/Sampling_time)*Sim_time+1,1); ; % 速度目標軌道
 % ステップ外生入力の設定
-Step_noise = 50;       % ステップ値
+Step_noise =  5;       % ステップ値
 Noise_rise_time = 5;   % 立ち上がり時間
 %% ---------- SETTINGS ANIMATION ---------- 
 % アニメーション結果を見て3つを手動調整
@@ -49,9 +49,9 @@ tildeAe = [ A, zeros(n,q);   % 拡大偏差システム係数行列の定義
             -C, zeros(q,q)];
 tildeBe = [B;zeros(q,p)];    % 拡大偏差入力係数行列の定義
 %% ---------- CONTROLLER DESIGN ---------- 
-q11 =    500; % 変位の重み
-q22 =    100; % 速度の重み
-q33 =  10000; % 積分器の重み
+q11 =    100; % 変位の重み
+q22 =      1; % 速度の重み
+q33 =   5000; % 積分器の重み
 Q = diag([q11 q22 q33]); % 状態変数重み行列の定義
 R   =   1;               % 入力重み行列の定義
 tildeKe = -lqr(tildeAe,tildeBe,Q,R) % LQRによるフィードバックゲインの計算
