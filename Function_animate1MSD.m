@@ -113,8 +113,10 @@ function Function_animate1MSD(Time,Displacement,Velocity,Target_Displacement,Tar
         subplot(4,1,3) 
         cla
         hold on
-        if (Target_Velocity ~= 0)
-            plot(Time, Target_Velocity,':k','LineWidth',4.0)
+        if all(Target_Velocity == 0)
+
+        else
+           plot(Time, Target_Velocity,':k','LineWidth',4.0)
         end
         plot(t, v,'-b','LineWidth',4.0)
         plot(t(j), v(j, 1), "bo", "MarkerFaceColor", 'b', 'MarkerSize', 10)
