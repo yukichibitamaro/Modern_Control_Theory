@@ -51,11 +51,11 @@
  
 　：　積分型サーボ制御(I-PD制御)の性能評価シミュレーション設定&実行ファイル
 
- ・Model_Sim_of_State_deviation_FB_PD.m
+ ・SET_Sim_of_State_deviation_FB_PD.m
  
 　：　状態偏差FB制御(PD制御)の性能評価シミュレーション設定&実行ファイル
 
- ・Model_Sim_of_State_deviation_FB_PD_.m
+ ・SET_Sim_of_State_deviation_FB_PD_.m
  
 　：　(微分先行型)状態偏差FB制御(P-D制御)の性能評価シミュレーション設定&実行ファイル
 
@@ -80,9 +80,25 @@
  
 　：　レギュレータ制御の性能評価シミュレーションSimulinkモデル
  
- ・Model_Sim_of_integral_servo_I_PD
+ ・Model_Sim_of_integral_servo_I_PD.m
  
-　：　積分型サーボ制御の性能評価シミュレーションSimulinkモデル
+　：　積分型サーボ制御(I-PD制御)の性能評価シミュレーション設定&実行ファイル
+
+ ・Model_Sim_of_State_deviation_FB_PD.m
+ 
+　：　状態偏差FB制御(PD制御)の性能評価シミュレーション設定&実行ファイル
+
+ ・Model_Sim_of_State_deviation_FB_PD_.m
+ 
+　：　(微分先行型)状態偏差FB制御(P-D制御)の性能評価シミュレーション設定&実行ファイル
+
+ ・Model_Sim_of_state_deviation_FB_and_output_integral_PID.m
+ 
+　：　状態偏差FB&出力偏差積分制御(PID制御)の性能評価シミュレーション設定&実行ファイル
+
+ ・Model_Sim_of_state_deviation_FB_and_output_integral_PI-D.m
+ 
+　：　(微分先行型)状態偏差FB&出力偏差積分制御(PID制御)の性能評価シミュレーション設定&実行ファイル
  　 
 # ◎シミュレーション
 
