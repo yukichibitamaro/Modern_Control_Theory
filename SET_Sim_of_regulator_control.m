@@ -17,7 +17,7 @@ Target_Velocity = zeros((1/Sampling_time)*Sim_time+1,1);     % 速度目標値
 %% ---------- SETTINGS ANIMATION ---------- 
 % アニメーション結果を見て2つを手動調整
 animation_sampling = 1/0.004; % アニメーションサンプリング時間
-Cart_width = 4.5;          % 描画する台車の幅(ステップ目標値)
+Cart_width = 4.5;             % 描画する台車の幅(ステップ目標値)
 %% ---------- VARIABLE DEFINITION ---------- 
 m = 1;  % 質量係数
 c = 2;  % 粘性係数

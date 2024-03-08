@@ -12,8 +12,8 @@ format compact;  % 余計な改行を消去
 Sim_time = 10;         % シミュレーション時間
 Sampling_time = 0.001; % サンプリング時間
 % 一定変位目標値の設定(余弦波での立ち上げ)
-Target_value = 10;  % 最終値
-Tfin = 1;          % 立ち上げ最終時間
+Target_value = 10;     % 最終値
+Tfin = 1;              % 立ち上げ最終時間
 Target_angular_frequency = pi/(2*Tfin); % 角周波数
 % 正弦波変位目標軌道の設定
 Amplitude = 10;               % 振幅
@@ -22,7 +22,7 @@ Angular_frequency = (2*pi)/Vibration_period; % 角周波数
 Initial_phase = 0;            % 初期位相
 % ステップ外生入力の設定
 Step_noise = -10;       % ステップ値
-Noise_rise_time = 5;   % 立ち上がり時間
+Noise_rise_time = 5;    % 立ち上がり時間
 %% ---------- SETTINGS ANIMATION ---------- 
 % アニメーション結果を見て3つを手動調整
 animation_sampling = 1/0.004; % アニメーションサンプリング時間
@@ -33,17 +33,17 @@ m = 1;  % 質量係数
 c = 2;  % 粘性係数
 k = 1;  % ばね定数
 %% ---------- DEFINING STATE-SPACE MODEL ---------- 
-A = [   0,    1 ;  % システム係数行列 A
+A = [   0,    1 ; % システム係数行列 A
      -k/m, -c/m]; 
-B = [0; 1/m];      % 入力係数行列 B
-C = [1 0];         % 観測行列 C
-D = 0;             % 直達項 D
-x0 = zeros(2,1);   % 状態変数の初期値
+B = [0; 1/m];     % 入力係数行列 B
+C = [1 0];        % 観測行列 C
+D = 0;            % 直達項 D
+x0 = zeros(2,1);  % 状態変数の初期値
 State_space = ss(A,B,C,D); % 状態空間モデルの定義
 %% ---------- CONTROLLER DESIGN ---------- 
 q11 =  1000; % 変位の重み
 q22 =     1; % 速度の重み
-Q = diag([q11 q22]); % 状態変数重み行列の定義
+Q = diag([q11 q22]);     % 状態変数重み行列の定義
 R   =     1;             % 入力重み行列の定義
 Ke  = -lqr(A,B,Q,R)      % LQRによるフィードバックゲインの計算
 %% ---------- SIMULATION ---------- 
