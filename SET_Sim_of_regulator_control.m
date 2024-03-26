@@ -31,8 +31,8 @@ D = 0;             % 直達項 D
 x0 = [10;0];   % 状態変数の初期値
 State_space = ss(A,B,C,D); % 状態空間モデルの定義
 %% ---------- CONTROLLER DESIGN ---------- 
-p1 = -6; % 変位の極
-p2 = -3; % 速度の極
+p1 = -3+7j; % 変位の極
+p2 = -3-7j; % 速度の極
 p = [p1,p2]; % 状態変数の極
 K = -place(A,B,p) % 状態フィードバックゲインの抽出
 %% ---------- SIMULATION ---------- 
@@ -42,3 +42,6 @@ sim('Model_Sim_of_regulator');         % シミュレーション実行
 % 関数の引数(時間,変位,速度,変位目標値(軌道),速度目標値(軌道),制御入力(操作量),アニメーションサンプリング時間,台車幅,figureナンバー,動画保存名と拡張子)
 Function_animate1MSD(Time,Displacement,Velocity,Target_Displacement,Target_Velocity,Control_Input,animation_sampling,Cart_width,1,'Movie_Regulator.mp4')
 disp('Finished!!!!!!!!')
+
+
+
